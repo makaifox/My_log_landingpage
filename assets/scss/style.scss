@@ -1,0 +1,80 @@
+@import 'config';
+
+header,section {
+  margin: 60px 0;
+}
+
+p {
+  font-family: $text-font;
+  font-weight: $medium-text-size;
+  padding: 10px;
+}
+
+h1, h2 {
+  font-family: $title-font;
+  font-weight: $title-size;
+}
+
+
+
+body {
+  background-color: $white;
+  color: $black;
+}
+
+nav{
+  a{
+    font-family: $text-font;
+    font-weight: $medium-text-size;
+    margin-right: 30px;
+
+    &:hover,&:active  {
+      font-weight: $black-text-size;
+    }
+  }
+
+  .btn {
+    font-family: $text-font;
+    font-weight: $black-text-size;
+    border: solid 3px $black ;
+    padding: 6px 40px !important;
+  }
+}
+
+.first-section {
+  .col-12 {
+    padding: 0 30px;
+  }
+  
+  .mountain_image {
+    width: 100%;
+    max-height: auto;
+  }
+  .btn {
+    font-family: $text-font;
+    font-weight: $black-text-size;
+    padding: 6px 40px !important;
+    margin: 20px 0;
+  }
+  .blog_image {
+    width: 100%;
+    max-width: 400px;
+    overflow: hidden;
+  }
+}
+.second-section {
+  background-color: $black;
+  color: $white;
+}
+
+@media (min-width: 1000px) {
+  h1 {
+    font-size: 4.18rem;
+  }
+
+  .first-section {
+    .col-12 {
+      padding:0 115px 0 30px;      
+    }
+  }
+}
