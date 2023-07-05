@@ -8,14 +8,19 @@ p {
   font-family: $text-font;
   font-weight: $medium-text-size;
   padding: 10px;
+  text-align: justify;
 }
 
-h1, h2 {
+h1, h2, h3 {
   font-family: $title-font;
   font-weight: $title-size;
 }
-
-
+h2 {
+  font-size: 2rem;
+}
+h3 {
+  font-size: 1.5rem;
+}
 
 body {
   background-color: $white;
@@ -41,30 +46,55 @@ nav{
   }
 }
 
+.mountain_image, .stand_image {
+  width: 100%;
+  height: auto;
+}
+
 .first-section {
   .col-12 {
     padding: 0 30px;
   }
   
-  .mountain_image {
-    width: 100%;
-    max-height: auto;
-  }
+
   .btn {
     font-family: $text-font;
     font-weight: $black-text-size;
     padding: 6px 40px !important;
     margin: 20px 0;
   }
+
+
   .blog_image {
     width: 100%;
-    max-width: 400px;
-    overflow: hidden;
+    height: 235px;
+    object-fit: cover;
+  }
+  hr {
+    margin: 20px 0;
+    border: solid 2px $black;
+    width: 15%;
+    opacity: 100%;
+    
   }
 }
+
 .second-section {
   background-color: $black;
   color: $white;
+  padding: 5rem 0;
+
+  .row {
+    margin: 30px 0;
+  }
+
+  h3{
+    margin-top :50px;
+  }
+  .stand_image {
+    margin: 0 !important;
+    padding: 0 !important;
+  }
 }
 
 @media (min-width: 1000px) {
@@ -77,4 +107,5 @@ nav{
       padding:0 115px 0 30px;      
     }
   }
+  
 }
