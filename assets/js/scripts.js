@@ -1,5 +1,5 @@
 $(document).ready(function() {
-  $.getJSON("./assets/js/testimonials.json", function(data) {
+  $.getJSON("https://64a5d63a00c3559aa9c039b3.mockapi.io/mylog/testimonials", function(data) {
     var carouselInner = $('.carousel-inner');
 
     var cardsPerSlide = {
@@ -31,10 +31,10 @@ $(document).ready(function() {
       $.each(data, function(index, item) {
         var cardColumn = $('<div class="col-12 col-md-6 col-lg-4 d-flex align-items-center justify-content-center"></div>');
         var card = $('<div class="card" >' +
-          '<img src="assets/images/userico.png" class="card-img" alt="testimonial image">' +
+          '<img src="'+ item.avatar +'" class="card-img" alt="testimonial image">' +
           '<div class="card-body ">' +
           '<h5 class="card-title text-center">' + item.name + '</h5>' +
-          '<p class="card-text text-center">' + item.description + '</p>' +
+          '<p class="card-text text-center">' + item.testimonial + '</p>' +
           '</div>' +
           '</div>');
 

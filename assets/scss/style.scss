@@ -109,7 +109,8 @@ nav{
     background-color: $white;
     border: solid 3px $black  ;
     padding: 40px 10px;
-    max-width: 240px;
+    width: 240px;
+    height: 300px;
     
     .card-img {
       width: 60px;
@@ -122,6 +123,8 @@ nav{
     }
     .card-text {
       font-size: 14px;
+      overflow: hidden;
+      max-height: 100px;
     }
   }
   .arrow-box {
@@ -188,7 +191,7 @@ footer {
   .third-section{
   
     .card {
-      max-width: 300px;
+      width: 300px;
     }
   }
 
