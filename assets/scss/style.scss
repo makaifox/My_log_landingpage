@@ -97,6 +97,61 @@ nav{
   }
 }
 
+.third-section{
+
+  .h1 {
+    font-size: 3rem;
+  }
+
+  .card {
+    margin-top: 30px;
+    background-color: $white;
+    border: solid 3px $black  ;
+    padding: 40px 10px;
+    
+    .card-img {
+      width: 60px;
+      height: auto;
+      margin: auto;
+    }
+  
+    .card-title {
+      font-size: 18px;
+    }
+    .card-text {
+      font-size: 14px;
+    }
+  }
+  .arrow-box {
+    background-color: $white;
+    border: solid 3px $black  ;
+    border-radius: 4px;
+    padding: 5px 14px;
+  }
+  
+  .carousel-control{
+    &-next, &-prev {
+      opacity: unset;
+    }
+
+    &-prev-icon {
+      background-image: url(../images/arrow-left.svg);
+    }
+    &-next-icon {
+      background-image: url(../images/arrow-right.svg);
+    }
+
+    &-prev-icon,&-next-icon {
+      fill: $black;
+      margin-top: 5px;
+    }
+  }
+    
+}
+
+
+
+
 @media (min-width: 1000px) {
   h1 {
     font-size: 4.18rem;
