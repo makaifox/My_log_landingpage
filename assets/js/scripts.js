@@ -29,7 +29,7 @@ $(document).ready(function() {
       carouselInner.append(slide);
 
       $.each(data, function(index, item) {
-        var cardColumn = $('<div class="col-12 col-md-6 col-lg-4"></div>');
+        var cardColumn = $('<div class="col-12 col-md-6 col-lg-4 d-flex align-items-center justify-content-center"></div>');
         var card = $('<div class="card" >' +
           '<img src="assets/images/userico.png" class="card-img" alt="testimonial image">' +
           '<div class="card-body ">' +

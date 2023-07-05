@@ -108,6 +108,7 @@ nav{
     background-color: $white;
     border: solid 3px $black  ;
     padding: 40px 10px;
+    max-width: 240px;
     
     .card-img {
       width: 60px;
@@ -125,7 +126,7 @@ nav{
   .arrow-box {
     background-color: $white;
     border: solid 3px $black  ;
-    border-radius: 4px;
+    border-radius: 6px;
     padding: 5px 14px;
   }
   
@@ -149,6 +150,27 @@ nav{
     
 }
 
+footer {
+  background-color: $grey;
+
+  .footer-logo {
+    height: 110px;
+    width: auto;
+  }
+
+  ul {
+
+      list-style: none;
+        a {
+          text-decoration: none;
+          color: $black;
+
+          &:hover {
+            font-weight: $black-text-size;
+          }
+        }
+  }
+}
 
 
 
@@ -161,6 +183,22 @@ nav{
     .col-12 {
       padding:0 115px 0 30px;      
     }
+  }
+  .third-section{
+  
+    .card {
+      max-width: 300px;
+    }
+  }
+
+  .third-section {
+
+    .carousel-control-prev {
+      left: -50px;
+  }
+    .carousel-control-next {
+      right: -50px;
+  }
   }
   
 }
